@@ -77,7 +77,7 @@
  
  Одни из работ:
  - [E-Orda - сайт компании в которой я работаю](https://e-orda.kz/) 
- - [Indigo - сайт для регистрации в детских садах](https://school.kst-goo.kz/ru/) 
- - [Sakura - сайт для регистрации в школах](https://indigo-bilim-pavlodar.e-orda.kz/ru/)
+ - [Indigo - сайт для регистрации в детских садах](https://indigo-bilim-pavlodar.e-orda.kz/ru/) 
+ - [Sakura - сайт для регистрации в школах](https://school.kst-goo.kz/ru/)
  - [Agugai - музыкальный портал, пока только на тестовом домене](http://test.agugai.kz/)
 
