@@ -1,0 +1,189 @@
+.card {
+  position: relative;
+  min-height: 480px;
+  padding-top: 20px;
+  padding-right: 15px;
+  padding-left: 48px;
+  text-align: left;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  background-image: url("../../assets/images/cat.png");
+  background-repeat: no-repeat;
+  background-position: left 4px bottom 4px;
+  background-size: 312px 270px;
+  cursor: pointer;
+
+  &__head-text {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 17px;
+  }
+
+  &__title {
+    font-size: 48px;
+    color: #000;
+    margin-bottom: 10px;
+  }
+
+  &__ingredient-text {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 15px;
+  }
+
+  &__second-text {
+    font-size: 14px;
+    color: #666;
+  }
+
+  &__badge {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 81px;
+    min-width: 81px;
+    height: 81px;
+    border-radius: 50%;
+    background-color: $blue;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+
+    .number {
+      font-size: 36px;
+      color: #fff;
+      line-height: 1;
+    }
+
+    .text {
+      font-size: 20px;
+      color: #fff;
+    }
+  }
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    fill: #f2f2f2;
+    stroke: #1698d9;
+    z-index: -1;
+  }
+
+  &-description {
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 17px;
+    min-height: 17px;
+
+    button {
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px dashed #107cb2;
+      color: #107cb2;
+      cursor: pointer;
+    }
+  }
+}
+
+.card-wrapper {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto 25px;
+  position: relative;
+  @media (min-width: 768px) {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  @media (min-width: 1200px) {
+    margin: 0 auto;
+  }
+
+  &:hover {
+    .card {
+      &__background {
+        stroke: #2ea8e6;
+      }
+
+      &__badge {
+        background-color: #2ea8e6;
+      }
+    }
+  }
+
+  &.selected {
+    .card__background {
+      stroke: $selected-color;
+    }
+
+    .card__badge {
+      background-color: $selected-color;
+    }
+
+    .card__head-text {
+      &.leave {
+        color: $selected-color;
+      }
+    }
+
+    &:hover {
+      .card__background {
+        stroke: $selected-hover-color;
+      }
+
+      .card__badge {
+        background-color: $selected-hover-color;
+      }
+    }
+  }
+
+  &.disabled {
+    pointer-events: none;
+    cursor: default;
+
+    .card {
+      &:before {
+        content: "";
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        bottom: 4px;
+        left: 4px;
+        background-color: #e4e4e4;
+        border-radius: 10px;
+        border-top-left-radius: 83px;
+        opacity: 0.6;
+      }
+    }
+
+    .card__background {
+      stroke: #b3b3b3;
+      fill: #e4e4e4;
+    }
+
+    .card__badge {
+      background-color: #b3b3b3;
+    }
+
+    .card-description {
+      color: #ffff66;
+    }
+  }
+}
