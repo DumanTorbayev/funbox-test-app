@@ -1,68 +1,83 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Тестовое задание FunBox
+Это тестовое задание выполнени с ипользованием [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+[Ссылка на приложение](https://dumantorbayev.github.io/funbox-test-app/)
 
-In the project directory, you can run:
+## Ответы на вопросы
 
-### `yarn start`
+> Расскажите, чем, на ваш взгляд, отличается хорошая верстка от плохой с точки зрения
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+-   пользователя - не будет неудобств в пользовании сайтом. У пользователя не должно возникать вопроса 
+    "Здесь что-то не работает или это так задумано?". 
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+-   менеджера проекта - уверенность в том, что при показе продукта клиенту он не сломается.
 
-### `yarn test`
+-   дизайнера - дизайн полностью воплощен в верстке.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-   верстальщика - понятно описанные имена классов и стили. 
 
-### `yarn build`
+-   клиентского программиста - компонентный подход в верстке.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-   серверного программиста - сервер не нагружается большим количеством запросов.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+> Опишите основные особенности верстки крупных многостраничных сайтов, дизайн которых может меняться в процессе реализации и поддержки.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Выделить похожие элементы со всех страниц в компоненты и переиспользовать, там где это необходимо.
 
-### `yarn eject`
+> Расскажите о своем опыте верстки подобных сайтов: какие методологии, инструменты и технологии вы применяли на практике.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Использовал принцип описанный выше и БЭМ
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> Опишите основные особенности верстки сайтов, которые должны одинаково
+  хорошо отображаться как на любом современном компьютере, так и на
+  смартфонах и планшетах под управлением iOS и Android. Расскажите о своем
+  опыте верстки подобных сайтов: какие инструменты и технологии вы применяли,
+  как проверяли результат на различных устройствах, какие именно устройства
+  требовалось поддерживать. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Использование мета-тега viewport, media query, префиксов. 
+Результаты проверял на смартфонах под управлением iOS и Android. Требовалось поддерживать устройства разрешения
+которых начинаются от 320рх и выше.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+> Расскажите, какие инструменты помогают вам экономить время в процессе написания, проверки и отладки кода. 
 
-## Learn More
+Использую css препроцессор sass, а именно scss. Также для работы использую IDE WebStorm И встроенные линтеры для
+отладки кода.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+> Вам нужно понять, почему страница отображается некорректно в Safari на iOS и в IE на Windows. Код писали не вы, 
+доступа к исходникам у вас нет. Ваши действия? Сталкивались ли вы с подобными проблемами на практике? 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Воспользуюсь таким сервисом как BrowserStack и консолью разработчика. С такими проблемами не сталкивался.
 
-### Code Splitting
+> Дизайнер отдал вам макет, в котором не показано, как должны выглядеть интерактивные элементы при наведении мыши. 
+Ваши действия?
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Если это простые эффекты, типо наведения на кнопки и ссылки, то добавлю их сам. Если сложные, то запрошу дизайнера 
+их отрисовать и предоставить мне.
 
-### Analyzing the Bundle Size
+> Какие ресурсы вы используете для развития в профессиональной сфере? Приведите несколько конкретных примеров 
+(сайты, блоги и так далее). 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+Использую google, youtube; читаю статьи на medium.com, habr.com, proglib.io.; 
 
-### Making a Progressive Web App
+> Какое направление развития вам более близко: JS-программирование, HTML/CSSверстка или и то, и другое? 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+Хочу развиваться больше в сторону JS-разработчика(React.js), где будет больше написания кода и меньше верстки.
 
-### Advanced Configuration
+> Какие ещё области знаний, кроме тех, что непосредственно относятся к работе, вам интересны? 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+Предпочитаю спорт, саморазвитие.
 
-### Deployment
+> Расскажите нам о себе и предоставьте несколько ссылок на последние работы, выполненные вами. 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+Мое имя Думан, мне 28 лет. Я из Казахстана, город Караганда. Работаю в крупной компании верстальщиком, не Frontend 
+разаработчиком, так как в моем понимание Frontend разарботчик это человек который больше пишет код, нежели верстает.
+ На данный момент изучаю React.js и хочу дальше развиваться в этом направлении. Есть несколько тестовых приложений 
+ написанных на React, они есть на моем Github.
+ 
+ Одни из работ:
+ - [E-Orda - сайт компании в которой я работаю](https://e-orda.kz/) 
+ - [Indigo - сайт для регистрации в детских садах](https://school.kst-goo.kz/ru/) 
+ - [Sakura - сайт для регистрации в школах](https://indigo-bilim-pavlodar.e-orda.kz/ru/)
+ - [Agugai - музыкальный портал, пока только на тестовом домене](http://test.agugai.kz/)
 
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
